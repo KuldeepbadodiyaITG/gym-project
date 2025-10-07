@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGYM Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section class="hero2 backgroundBlack" id="">
+        <header class="navbar backgroundBlack ">
+            <div class="logo white">🌟 MyGYM</div>
+            <nav>
+                <ul class="nav-links">
+                    <li class="white">Home</li>
+                    <li class="white">About</li>
+                    <li class="white">Services</li>
+                    <li class="white">Contact</li>
+                    <li> <button onclick="darkmode()" class="main">..</button></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section class="hero ">
+            <div class="hero-content ">
+                <div class="box">
+                    thank you so much for open my website
+                </div>
+  <div class="box12">
+            <p>this is <span id="typer"></span></p>
+        </div>
+                <h1>Beleive in Yourself And You Will be Unstoppable</h1>
+                <p>hard work and positive thinking</p>
+                <a class="btn">Explore Now</a>
+            </div>
+        </section>
+
+        
+
+        <footer class="backgroundBlack">
+            <div class="footer-content backgroundBlack">
+                <p class="white">personal trainer available</p>
+                <p class="white">Contact US</p>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        const bodyAllElement = document.querySelectorAll("*");
+
+        function darkmode() {
+
+           
+           
+        }
+
+        let element = document.querySelector(".box")
+
+        setTimeout(() => {
+            element.style.display = "block"
+        }, 2000);
+
+        setTimeout(() => {
+            element.style.display = "none"
+            clearTimeout(element)
+        }, 6000);
+
+             const names = [
+            "trainer",
+            "fitness",
+            "personality",
+            "bodybuilding"
+        ]
+        const typer = document.getElementById("typer");
+        let i = 0;
+        let n = names.length;
+        setInterval(() => {
+            let word = names[i];
+            let j = 0;
+            const value = setInterval(() => {
+                if (j < word.length) {
+                    typer.innerText = typer.innerText.slice(0, -1)
+                    typer.innerText += word[j];
+                    typer.innerText += "|"
+                }
+                else {
+                    stopinterval();
+                }
+                function stopinterval() {
+                    clearInterval(value)
+                }
+                j++;
+            }, 100);
+            i++;
+            i = i % n;
+            typer.innerText = "";
+        }, 2000);
+
+    </script>
+</body>
+
+</html>

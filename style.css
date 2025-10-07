@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .8s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+
+.hero {
+    height: 100vh;
+    background: url('https://png.pngtree.com/background/20250105/original/pngtree-a-fully-equipped-gym-with-dumbbells-weight-machines-and-cardio-equipment-picture-image_16142999.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ffd700;
+    color: black;
+    padding: 14px 30px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.socials a:hover {
+    color: #ffd700;
+}
+
+
+.active {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.hero2 {
+    color: white;
+
+}
+
+.backgroundBlack {
+    background-color: black;
+}
+
+.backgroundWhite {
+    background-color: white;
+}
+
+.main {
+    color: black;
+    background: black;
+    height: 10px;
+    margin-top: 8px;
+}
+
+.box {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: linear-gradient(90deg, #b38e18, #2575fc); 
+    margin-left:500px;
+    display:none;
+    border-radius: 30px;
+    color:black;
+}
+
+.box12 {
+    height: 94px;
+    width: 252px;
+    font-size: 21px;
+    /* background-color: darkslategray; */
+    color: white;
+    margin: 0 auto;
+    border-radius: 40%;
+    text-align: center;
+}
